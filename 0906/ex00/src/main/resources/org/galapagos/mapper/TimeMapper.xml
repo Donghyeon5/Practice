@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+	 "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+		<!-- 실행할 메서드가 있는 곳 -->
+<mapper namespace="org.galapagos.mapper.TimeMapper">
+
+	<!-- @Select를 대신함 id= 메서드명 -->
+	<select id ="getTime2" resultType="string">
+		SELECT SYSDATE()
+	</select>
+	
+</mapper>
